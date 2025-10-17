@@ -2,7 +2,7 @@ from pathlib import Path
 import streamlit as st
 from PIL import Image
 import streamlit_scrollable_textbox as stx
-from dash import Dash, dcc, html
+
 
 #Configurações estruturais 
 diretorio  = Path(__file__).parent if "__file__" in locals() else Path.cwd()
