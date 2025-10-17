@@ -234,6 +234,16 @@ for curso, link in CURSOS_COMPLEMENTARES.items():
     st.write(f"[{curso}]({link})")
 st.write("---")
     
+
+    
+st.download_button(
+    label = "Download Curriculo",
+    data = pdfLeitura,
+    file_name=arquivo_pdf.name,
+    mime = "application/octet-stream"
+   )
+
+
 remove_st_estilo = """
     <style>
         #MainMenu {visibility:hidden;}
@@ -243,10 +253,3 @@ remove_st_estilo = """
 
 """
 st.markdown(remove_st_estilo, unsafe_allow_html=True)
-    
-st.download_button(
-    label = "Download Curriculo",
-    data = pdfLeitura,
-    file_name=arquivo_pdf.name,
-    mime = "application/octet-stream"
-   )
