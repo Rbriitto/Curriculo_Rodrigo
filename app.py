@@ -242,6 +242,7 @@ remove_st_estilo = """
     </style>
 
 """
+st.markdown(remove_st_estilo, unsafe_allow_html=True)
     
 st.download_button(
     label = "Download Curriculo",
