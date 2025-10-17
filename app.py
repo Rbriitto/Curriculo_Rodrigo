@@ -234,6 +234,15 @@ for curso, link in CURSOS_COMPLEMENTARES.items():
     st.write(f"[{curso}]({link})")
 st.write("---")
     
+remove_st_estilo = """
+    <style>
+        #MainMenu { visibility:hidden;}
+        #footer { visibility:hidden;}
+        #header { visibility:hidden;}        
+    </style>
+
+"""
+    
 st.download_button(
     label = "Download Curriculo",
     data = pdfLeitura,
