@@ -9,7 +9,7 @@ diretorio  = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 placeholder = st.empty()
 arquivo_css = diretorio / "styles" / "geral.css"
 arquivo_pdf = diretorio / "assets" / "curriculo.pdf"
-arquivo_img = diretorio / "assets" / "foto.png"
+#arquivo_img = diretorio / "assets" / "foto.png"
 
 # Configurações Geral das Informações
 
@@ -47,7 +47,7 @@ with open(arquivo_css) as c:
 with open(arquivo_pdf, "rb") as arquivo_pdf:
     pdfLeitura = arquivo_pdf.read()
     
-image = Image.open(arquivo_img)
+#image = Image.open(arquivo_img)
 
 col1, col2 = st.columns(2, gap = "small")
 
