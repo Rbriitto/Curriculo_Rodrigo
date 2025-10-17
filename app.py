@@ -236,9 +236,9 @@ st.write("---")
     
 remove_st_estilo = """
     <style>
-        #MainMenu { visibility:hidden;}
-        #footer { visibility:hidden;}
-        #header { visibility:hidden;}        
+        #MainMenu {visibility:hidden;}
+        #footer {visibility:hidden;}
+        #header {visibility:hidden;}        
     </style>
 
 """
