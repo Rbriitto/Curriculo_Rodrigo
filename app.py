@@ -62,8 +62,6 @@ st.markdown(
 
 
 st.write(RESUMO_PROFISSIONAL)
- 
-
 st.markdown(
        """
     <div color: white; font-size:16px; font-weight: 500;">
@@ -77,15 +75,14 @@ st.markdown(
 )
 st.write("---")
 #Midias Sociais:
-st.write("#")
 colunas = st.columns(len(MIDIA_SOCIAL))
 for indice, (plataforma, link) in enumerate(MIDIA_SOCIAL.items()):
     colunas[indice].write(f"[{plataforma}]({link})")
     
 #Experiencias 
-st.write("#")
-st.subheader("🔎 Resumo Profissional")
+
 st.write("---")
+st.subheader("🔎 Resumo Profissional")
 st.write(
     """
          - 💹 Profissional com trajetória sólida em telecomunicações, com atuação consistente em faturamento, 
@@ -95,10 +92,20 @@ st.write(
 
     """
 )
-#Skills 
-st.write("#")
-st.subheader("🕵🏻 Skills")
 st.write("---")
+st.subheader("📚 Formação Acadêmica")
+st.markdown("""
+**🎓 Bacharel em Sistemas de Informação**  
+Universidade Estácio de Sá - Conclusão: 12/2019
+
+
+**👷🏻‍♂️ Técnico em Informática para Internet**  
+Universidade Estácio de Sá - Conclusão: 12/2015
+
+""")
+st.write("---")
+#Skills 
+st.subheader("🕵🏻 Skills")
 st.write("""🏆 - Ferramentas de Dados: """)
 st.code("Power Bi, SQL, Python, Streamlit, Dash, Google Analitycs, Tableu")
 
@@ -227,9 +234,8 @@ st.markdown("""
 
 
 #Cursos 
-st.write("#")
-st.subheader("💻 Cursos Complementares")
 st.write("---")
+st.subheader("💻 Cursos Complementares")
 for curso, link in CURSOS_COMPLEMENTARES.items():
     st.write(f"[{curso}]({link})")
 st.write("---")
