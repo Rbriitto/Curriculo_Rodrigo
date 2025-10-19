@@ -4,6 +4,9 @@ from PIL import Image
 import streamlit_scrollable_textbox as stx
 
 
+logoLinkedin = "![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)"
+logoGitHub = "![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)"
+logoInstagram = "![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)"
 #Configurações estruturais 
 diretorio  = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 placeholder = st.empty()
@@ -20,9 +23,9 @@ RESUMO_PROFISSIONAL = """
 """
 EMAIL = "rodrigobritto.web@gmail.com"
 MIDIA_SOCIAL = {
-    "LinkedIn":"https://www.linkedin.com/in/rodrigo-britto-506a00b9/",
-    "GitHub":"github.com/Rbriitto",
-    "Instagram":"https://www.instagram.com/rodrigobriitto"
+    f"{logoLinkedin}":"https://www.linkedin.com/in/rodrigo-britto-506a00b9/",
+    f"{logoGitHub}":"https://github.com/Rbriitto",
+    f"{logoInstagram}":"https://www.instagram.com/rodrigobriitto"
 }
 
 CURSOS_COMPLEMENTARES= {
