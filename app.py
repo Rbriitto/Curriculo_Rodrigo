@@ -174,7 +174,7 @@ st.markdown("""
 
 • Registro padronizado e detalhado de eventos para histórico, rastreabilidade e auditoria.
 
-• Suporte direto às equipes de campo e consolidação de dados operacionais para tomada de decisã
+• Suporte direto às equipes de campo e consolidação de dados operacionais para tomada de decisão
     
 • Elaboração de dashboards em BI e acompanhamento de métricas de desempenho para direcionar melhorias.  
 
